@@ -1,15 +1,13 @@
 # Private Search Engine
 
-A simple privacy-focused search engine prototype built using Python.  
-This project demonstrates how web pages can be crawled, indexed, and searched using modern backend tools.
+A simple privacy-focused search engine prototype built using Python, Scrapy, Elasticsearch, and FastAPI.
 
 ## Features
 
 - Web crawling using Scrapy
-- Data indexing with Elasticsearch
-- Search API using FastAPI
-- REST API endpoint for querying indexed pages
-- Modular architecture for experimentation with search technologies
+- Indexing documents using Elasticsearch
+- FastAPI search backend
+- REST API endpoint for searching indexed pages
 
 ## Tech Stack
 
@@ -19,6 +17,20 @@ This project demonstrates how web pages can be crawled, indexed, and searched us
 - FastAPI
 - Uvicorn
 
-## Project Architecture
+## Architecture
 
 Crawler → JSON Dataset → Elasticsearch Index → FastAPI API → Search Results
+
+## Project Structure
+
+Private-Search-Engine
+│
+├ crawler/
+├ indexer.py
+├ search_api.py
+├ .gitignore
+└ README.md
+
+## Run the Project
+
+Start Elasticsearch
